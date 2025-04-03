@@ -18,8 +18,8 @@ code_word_wrap: true
 # formal:
 #   icon: link || the description
 social:
-  fab fa-github: https://github.com/JoneyXiao || Github
-  fas fa-envelope: mailto:joneyhsiao@outlook.com || Email
+  fab fa-github: https://github.com/FrankOuyang || Github
+  fas fa-envelope: mailto:ouyang.sz@qq.com || Email
 
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
@@ -43,7 +43,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/JoneyXiao
+      link: https://github.com/FrankOuyang
   card_announcement:
     enable: true
     content: This is a comprehensive collection of DevOps interview questions and answers. Feel free to contribute!
@@ -153,7 +153,7 @@ footer:
   owner:
     enable: true
     since: 2025
-  custom_text: <a href="https://github.com/JoneyXiao">Follow me on GitHub</a>
+  custom_text: <a href="https://github.com/FrankOuyang">Follow me on GitHub</a>
   copyright: true # Copyright of theme and framework
 
 # Lightbox (圖片大圖查看模式)
