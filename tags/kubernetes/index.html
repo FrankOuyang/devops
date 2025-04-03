@@ -1,0 +1,220 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Tag: kubernetes | DevOps Interview Questions</title><meta name="author" content="DevOpsMe"><meta name="copyright" content="DevOpsMe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="A comprehensive collection of DevOps interview questions and answers to help you prepare for technical interviews.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DevOps Interview Questions">
+<meta property="og:url" content="https://frankouyang.github.io/devops/tags/kubernetes/">
+<meta property="og:site_name" content="DevOps Interview Questions">
+<meta property="og:description" content="A comprehensive collection of DevOps interview questions and answers to help you prepare for technical interviews.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://frankouyang.github.io/devops/img/devops-colorful.svg">
+<meta property="article:author" content="DevOpsMe">
+<meta property="article:tag" content="devops, interview, questions, answers, ci&#x2F;cd, containers, cloud, infrastructure, monitoring">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://frankouyang.github.io/devops/img/devops-colorful.svg"><link rel="shortcut icon" href="/devops/img/devops-colorful.svg"><link rel="canonical" href="https://frankouyang.github.io/devops/tags/kubernetes/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/devops/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/devops/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Tag: kubernetes',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'tag'
+}</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background: linear-gradient(to right, rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/devops/img/devops-colorful.svg" onerror="this.onerror=null;this.src='/devops/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/devops/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a><a href="/devops/tags/"><div class="headline">Tags</div><div class="length-num">25</div></a><a href="/devops/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/devops/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/devops/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/devops/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/devops/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/devops/about/"><i class="fa-fw fas fa-user"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/devops/"><span class="site-name">DevOps Interview Questions</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/devops/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/devops/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/devops/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/devops/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/devops/about/"><i class="fa-fw fas fa-user"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">kubernetes</h1></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/devops/containers/docker-kubernetes/" title="Explain Docker and Kubernetes">Explain Docker and Kubernetes</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-03-18T02:15:00.000Z" title="Created 2024-03-18 10:15:00">2024-03-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/devops/categories/containers/">containers</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/devops/tags/containers/">containers</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/devops/tags/docker/">docker</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/devops/tags/kubernetes/">kubernetes</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/devops/tags/orchestration/">orchestration</a></span></div><div class="content">QuestionExplain Docker containerization and how Kubernetes helps with container orchestration. AnswerDocker and ContainerizationDocker is a platform that uses OS-level virtualization to deliver software in packages called containers. Containers...</div></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/devops/img/devops-colorful.svg" onerror="this.onerror=null;this.src='/devops/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">DevOpsMe</div><div class="author-info-description">DevOps Interview Questions</div><div class="site-data"><a href="/devops/archives/"><div class="headline">Articles</div><div class="length-num">7</div></a><a href="/devops/tags/"><div class="headline">Tags</div><div class="length-num">25</div></a><a href="/devops/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/FrankOuyang"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/FrankOuyang" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:ouyang.sz@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is a comprehensive collection of DevOps interview questions and answers. Feel free to contribute!</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/devops/monitoring/observability/" title="Key Components of Observability in DevOps">Key Components of Observability in DevOps</a><time datetime="2024-03-18T02:30:00.000Z" title="Created 2024-03-18 10:30:00">2024-03-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/devops/infrastructure/infrastructure-as-code/" title="What is Infrastructure as Code (IaC)?"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5mcmFzdHJ1Y3R1cmV8ZW58MHx8MHx8fDA%3D" onerror="this.onerror=null;this.src='/devops/img/404.jpg'" alt="What is Infrastructure as Code (IaC)?"/></a><div class="content"><a class="title" href="/devops/infrastructure/infrastructure-as-code/" title="What is Infrastructure as Code (IaC)?">What is Infrastructure as Code (IaC)?</a><time datetime="2024-03-18T02:25:00.000Z" title="Created 2024-03-18 10:25:00">2024-03-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/devops/cloud/cloud-providers/" title="Differences Between Major Cloud Providers">Differences Between Major Cloud Providers</a><time datetime="2024-03-18T02:20:00.000Z" title="Created 2024-03-18 10:20:00">2024-03-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/devops/containers/docker-kubernetes/" title="Explain Docker and Kubernetes">Explain Docker and Kubernetes</a><time datetime="2024-03-18T02:15:00.000Z" title="Created 2024-03-18 10:15:00">2024-03-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/devops/ci-cd/explain-ci-cd/" title="Explain the CI/CD pipeline"><img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2klMjBjZHxlbnwwfHwwfHx8MA%3D%3D" onerror="this.onerror=null;this.src='/devops/img/404.jpg'" alt="Explain the CI/CD pipeline"/></a><div class="content"><a class="title" href="/devops/ci-cd/explain-ci-cd/" title="Explain the CI/CD pipeline">Explain the CI/CD pipeline</a><time datetime="2024-03-18T02:10:00.000Z" title="Created 2024-03-18 10:10:00">2024-03-18</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/devops/categories/ci-cd/"><span class="card-category-list-name">ci-cd</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/devops/categories/cloud/"><span class="card-category-list-name">cloud</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/devops/categories/containers/"><span class="card-category-list-name">containers</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/devops/categories/general/"><span class="card-category-list-name">general</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/devops/categories/infrastructure/"><span class="card-category-list-name">infrastructure</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/devops/categories/monitoring/"><span class="card-category-list-name">monitoring</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/devops/tags/metrics/" style="font-size: 1.1em; color: #999">metrics</a> <a href="/devops/tags/azure/" style="font-size: 1.1em; color: #999">azure</a> <a href="/devops/tags/sre/" style="font-size: 1.1em; color: #999">sre</a> <a href="/devops/tags/terraform/" style="font-size: 1.1em; color: #999">terraform</a> <a href="/devops/tags/aws/" style="font-size: 1.1em; color: #999">aws</a> <a href="/devops/tags/roles/" style="font-size: 1.1em; color: #999">roles</a> <a href="/devops/tags/gcp/" style="font-size: 1.1em; color: #999">gcp</a> <a href="/devops/tags/orchestration/" style="font-size: 1.1em; color: #999">orchestration</a> <a href="/devops/tags/fundamentals/" style="font-size: 1.1em; color: #999">fundamentals</a> <a href="/devops/tags/automation/" style="font-size: 1.5em; color: #99a9bf">automation</a> <a href="/devops/tags/traces/" style="font-size: 1.1em; color: #999">traces</a> <a href="/devops/tags/logs/" style="font-size: 1.1em; color: #999">logs</a> <a href="/devops/tags/containers/" style="font-size: 1.1em; color: #999">containers</a> <a href="/devops/tags/infrastructure/" style="font-size: 1.1em; color: #999">infrastructure</a> <a href="/devops/tags/ansible/" style="font-size: 1.1em; color: #999">ansible</a> <a href="/devops/tags/ci-cd/" style="font-size: 1.1em; color: #999">ci-cd</a> <a href="/devops/tags/kubernetes/" style="font-size: 1.1em; color: #999">kubernetes</a> <a href="/devops/tags/providers/" style="font-size: 1.1em; color: #999">providers</a> <a href="/devops/tags/monitoring/" style="font-size: 1.1em; color: #999">monitoring</a> <a href="/devops/tags/iac/" style="font-size: 1.1em; color: #999">iac</a> <a href="/devops/tags/cloud/" style="font-size: 1.1em; color: #999">cloud</a> <a href="/devops/tags/observability/" style="font-size: 1.1em; color: #999">observability</a> <a href="/devops/tags/pipeline/" style="font-size: 1.1em; color: #999">pipeline</a> <a href="/devops/tags/devops/" style="font-size: 1.5em; color: #99a9bf">devops</a> <a href="/devops/tags/docker/" style="font-size: 1.1em; color: #999">docker</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>Archives</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/devops/archives/2024/03/">
+            <span class="card-archive-list-date">
+              March 2024
+            </span>
+            <span class="card-archive-list-count">7</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">7</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-04-03T06:22:13.329Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2025 By DevOpsMe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div><div class="footer_custom_text"><a target="_blank" rel="noopener" href="https://github.com/FrankOuyang">Follow me on GitHub</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/devops/js/utils.js"></script><script src="/devops/js/main.js"></script><script src="/devops/"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      false 
+        ? (usePjax ? pjax.loadUrl('/devops/404') : window.location.href = '/devops/404')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
